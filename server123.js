@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 
 
 app.get('/display', function(req, res) {
-  fs.readFile('suntzu.jpg', function(err, data) {
+  fs.readFile('/suntzu.jpg', function(err, data) {
     if (err) throw err; // Fail if the file can't be read.
     else {
       res.writeHead(200, {'Content-Type': 'image/jpeg'});

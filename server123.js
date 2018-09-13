@@ -14,7 +14,7 @@ var {User} = require('./models/user');
 var {Users} = require('./models/users');
 var {Userdetail} = require('./models/userdetail');
 var {Location} = require('./models/location');
-
+var fs = require("fs");
 
 
 const port = process.env.PORT || 3000;
